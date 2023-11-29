@@ -1,0 +1,112 @@
+configuration {
+  terminal: "alacritty";	
+  show-icons: true; 
+  //icon-theme: "Nordic";
+  drun-display-format: "{icon} {name}";
+  font: "DejaVuSansMono Nerd Font 12";
+  //modi: "window,run,drun";
+}
+
+@theme "/dev/null"
+
+// Gruvbox theme
+
+* {
+  //bg: #2e3440;
+  //bg: #252a34;
+  bg: #242424;
+  bg-alt: #303030;
+  bg-active: #689d6a;
+  //bg-active: #98971a;
+
+  fg: #a89984;
+  fg-alt: #aa9984;
+  fg-textbox: #98971a;
+  fg-dark: #282828;
+  border-color: #458588;
+
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  //width: 30%;
+  //width: 640;
+  width: 410;
+  border: 4;
+  border-color: @border-color;
+}
+
+element {
+  padding: 6 0;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg-dark;
+  background-color: @bg-active;
+}
+
+element-text {
+  text-color: inherit;
+  background-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 20;
+  padding: 0 10 0 0;
+  background-color: inherit;
+}
+
+
+inputbar {
+  children: [prompt, entry];
+}
+
+prompt {
+  background-color: @bg-alt;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg;
+}
+
+message {
+  padding: 12;
+}  
+
+textbox {
+  text-color: @fg-textbox;
+}
+
+listview {
+  padding: 6 12;
+ // padding: 6 12;
+  background-color: @bg;
+  columns: 1;
+  lines: 25;
+  scrollbar: true;
+}
+
+mainbox {
+  background-color: @bg;
+}
+
+scrollbar {
+	background-color: @bg;
+	handle-color: @bg-alt;
+	handle-width: 6;
+	border: 0 0;
+	border-color: @bg-alt;
+	margin: 0 0 0 10;
+}

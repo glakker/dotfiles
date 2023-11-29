@@ -1,0 +1,18 @@
+[Added Associations]
+text/plain=org.xfce.mousepad.desktop;
+application/x-compressed-tar=xarchiver.desktop;thunar.desktop;
+application/pdf=firefox.desktop;xpdf.desktop;xfce4-mime-settings.desktop;org.pwmt.zathura.desktop;
+application/epub+zip=userapp-epy-FG74D2.desktop;
+application/x-theme=org.xfce.mousepad.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;
+image/x-xcursor=org.xfce.mousepad.desktop;
+application/xml=org.xfce.mousepad.desktop;
+application/vnd.efi.iso=xfburn.desktop;xarchiver.desktop;
+
+[Default Applications]
+application/x-compressed-tar=xarchiver.desktop
+application/pdf=firefox.desktop
+image/x-xcursor=org.xfce.mousepad.desktop
+
+[Removed Associations]
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;gcr-viewer.desktop;

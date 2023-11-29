@@ -1,0 +1,19 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+    "http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<!-- Do not edit manually - generated and managed by xdg-desktop-menu -->
+<Menu>
+    <Name>Applications</Name>
+<Menu>
+    <Name>xfce-games</Name>
+    <Directory>xfce-games.directory</Directory>
+    <Include>
+        <Filename>Steam</Filename>
+        <Filename>Linux</Filename>
+        <Filename>Runtime</Filename>
+        <Filename>3.0</Filename>
+        <Filename>(sniper).desktop</Filename>
+        <Filename>Proton</Filename>
+        <Filename>Experimental.desktop</Filename>
+    </Include>
+</Menu>
+</Menu>

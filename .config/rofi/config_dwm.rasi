@@ -1,0 +1,116 @@
+configuration {
+  terminal: "alacritty";	
+  show-icons: true; 
+  icon-theme: "Sweet-Rainbow";
+  drun-display-format: "{icon} {name}";
+  font: "DejaVuSansMono Nerd Font 12";
+}
+
+@theme "/dev/null"
+
+
+* {
+  // alap háttér	
+  bg: #222222;
+  // keret, fejléc
+  bg-alt: #005577;
+  // kiemelés
+  bg-active: #005577;
+
+  // ablak neve, kereső
+  fg: #bdbdbd;
+  // lista
+  fg-alt: #bbbbbb;
+  // üzenet
+  fg-textbox: #00d700;
+  // kiemelt szöveg
+  fg-high: #eeeeee;
+
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  //width: 30%;
+  width: 400;
+  border: 3;
+  border-color: @bg-alt;
+}
+
+element {
+  padding: 6 0;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg-high;
+  background-color: @bg-active;
+}
+
+element-text {
+  text-color: inherit;
+  background-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 24;
+  padding: 0 10 0 0;
+  background-color: inherit;
+}
+
+
+inputbar {
+  children: [prompt, entry];
+}
+
+prompt {
+  background-color: @bg-alt;
+  enabled: true;
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+entry {
+  background-color: @bg-alt;
+  padding: 12;
+  text-color: @fg-high;
+}
+
+message {
+  padding: 12;
+//  expand: true;
+}  
+
+textbox {
+  text-color: @fg-textbox;
+}
+
+listview {
+  padding: 6 12;
+  background-color: @bg;
+  columns: 1;
+  lines: 29;
+  scrollbar: true;
+}
+
+mainbox {
+  children: [inputbar, message, listview];
+  background-color: @bg;
+}
+
+scrollbar {
+	background-color: @bg;
+	handle-color: #393939;
+	handle-width: 9;
+	border: 0 0;
+	border-color: @bg-alt;
+	padding: 0;
+//	margin: 0 0 0 10;
+}
+
+// vim:filetype=rasi

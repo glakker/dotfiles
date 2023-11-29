@@ -1,0 +1,5 @@
+ENTRY "/home/dg" URL "/home/dg"
+ENTRY "/home/dg/.config" URL "/home/dg/.config"
+ENTRY "/home/dg/Documents" URL "/home/dg/Documents"
+ENTRY "/home/dg/Downloads" URL "/home/dg/Downloads"
+ENTRY "/home/dg/Pictures" URL "/home/dg/Pictures"

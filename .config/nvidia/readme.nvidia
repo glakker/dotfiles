@@ -1,0 +1,16 @@
+This nvidia folder only stores nvidia info
+The conf files are to be copied into 
+/etc/X11/xorg.conf.d/
+---------------------------------------------------
+
+10-screeen.conf
+- Gsync compatibility for 4K Lenovo monitor
+
+20-nvidida-dpi.conf
+- dpi settings for my 4K Lenovo monitor
+
+30-nvidia-notear.conf
+- screen tearing remedy
+
+
+
