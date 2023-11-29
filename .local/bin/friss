@@ -1,0 +1,11 @@
+#! /bin/bash
+########################
+# mirrorlist frissítése
+########################
+echo mirrorlist frissítése...
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo reflector -c Hungary -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+sudo pacman -Syyy
+echo ... mirrorlist frissítve
+printf "... packages to update: "
+pacman -Qu | wc -l

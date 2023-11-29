@@ -1,0 +1,5 @@
+#!/bin/bash
+# Program launcher with fzf
+# dependency: devour 
+
+exec devour $(compgen -c | sort -ud | fzf  --border=sharp --margin=5% --reverse --border-label=" Fuzzy Launcher " --info=right) 
