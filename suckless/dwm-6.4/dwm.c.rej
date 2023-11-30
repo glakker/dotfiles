@@ -1,10 +1,15 @@
 --- dwm.c
 +++ dwm.c
-@@ -1652,6 +1663,7 @@ spawn(const Arg *arg)
- {
- 	if (arg->v == dmenucmd)
- 		dmenumon[0] = '0' + selmon->num;
-+	selmon->tagset[selmon->seltags] &= ~scratchtag;
- 	if (fork() == 0) {
- 		if (dpy)
- 			close(ConnectionNumber(dpy));
+@@ -111,12 +108,6 @@ typedef struct {
+ 	void (*arrange)(Monitor *);
+ } Layout;
+ 
+-typedef struct {
+-	int isgap;
+-	int realgap;
+-	int gappx;
+-} Gap;
+-
+ struct Monitor {
+ 	char ltsymbol[16];
+ 	float mfact;
