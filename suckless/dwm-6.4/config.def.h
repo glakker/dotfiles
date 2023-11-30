@@ -72,7 +72,7 @@ static const char *mutecmd[]  = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "t
 static const char *voldowncmd[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *volupcmd[]  = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "alacritty", "-T", scratchpadname, NULL };
+static const char *scratchpadcmd[] = { "alacritty", "-o", "window.opacity=1", "-T", scratchpadname, NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
