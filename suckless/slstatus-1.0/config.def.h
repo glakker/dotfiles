@@ -68,13 +68,16 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ keyboard_indicators, "%s ", "C?" },
 	{ load_avg, "| %s | ", NULL },
-	{ cpu_perc, "CPU %s% | ", NULL },
-	{ ram_used, "RAM %s ", NULL },
-	{ ram_perc, "%s% | ", NULL },
-	{ disk_used, "/ %s ", "/" },
-	{ disk_perc, "%s% | ", "/" },
+	{ cpu_perc, "CPU %2s% : ", NULL },
+	{ temp, "%s°C | ", "/sys/class/thermal/thermal_zone2/temp" },
+	{ run_command, "GPU %2s% : ", "gputil" },
+	{ run_command, "%s°C | ", "gputemp" },
+	{ ram_used, "RAM %s : ", NULL },
+	{ ram_perc, "%2s% | ", NULL },
+	{ disk_used, "/ %s : ", "/" },
+	{ disk_perc, "%2s% | ", "/" },
 	{ vol_perc, "vol %s% | ", "/dev/mixer" },
-	{ datetime, "%s",           "%F %T " },
+	{ datetime, "%s",           "%F  %H:%M " },
 };
 
 
