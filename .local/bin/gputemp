@@ -1,0 +1,4 @@
+#!/bin/bash
+# nvidia gpu temperature
+nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits
+
