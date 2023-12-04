@@ -4,9 +4,24 @@
   [[default]]
     allow_bold = False
     background_darkness = 0.55
-    font = Hasklug Nerd Font Mono 19
+    font = Hasklug Nerd Font 15
+    use_system_font = False
+    title_transmit_fg_color = "#97adfa"
+    title_transmit_bg_color = "#3943d6"
+    title_use_system_font = False
+    title_font = LiterationMono Nerd Font Mono Bold 19
+  [[C64]]
+    allow_bold = False
+    background_color = "#3943d6"
+    background_darkness = 0.55
+    font = LiterationMono Nerd Font Mono Bold 19
+    foreground_color = "#97adfa"
     show_titlebar = False
     use_system_font = False
+    title_transmit_fg_color = "#97adfa"
+    title_transmit_bg_color = "#3943d6"
+    title_use_system_font = False
+    title_font = LiterationMono Nerd Font Mono Bold 19
 [layouts]
   [[default]]
     [[[window0]]]
@@ -15,4 +30,24 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
+  [[C64]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:20
+      maximised = False
+      fullscreen = False
+      size = 1146, 1064
+      title = dg@arch:~
+      last_active_term = c08b2ca0-9b34-4771-900d-2b9f108a5e0c
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = C64
+      uuid = c08b2ca0-9b34-4771-900d-2b9f108a5e0c
+      command = C64txt  && bash || bash
 [plugins]
