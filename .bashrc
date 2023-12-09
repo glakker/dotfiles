@@ -54,6 +54,7 @@ alias vv='vifm'
 alias fcd='cd $(fd . '/' -H -t d | fzf --prompt="cd : ")'
 # git bare repository for my dotfiles
 alias dotgit='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
+alias lutris='flatpak run --user net.lutris.Lutris'
 
 export EDITOR="nvim"
 export VISUAL="nvim"
