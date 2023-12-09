@@ -48,8 +48,11 @@
 
 highlight clear
 
+highlight {*.iso} cterm=none ctermfg=208 ctermbg=default
+highlight {*.7z,*.ace,*.arj,*.bz2,*.cpio,*.deb,*.dz,*.gz,*.jar,*.lzh,*.lzma,*.rar,*.rpm,*.rz,*.tar,*.taz,*.tb2,*.tbz,*.tbz2,*.tgz,*.tlz,*.trz,*.txz,*.tz,*.tz2,*.xz,*.z,*.zip,*.zoo}
+        \ cterm=none ctermfg=red ctermbg=default
 highlight Win cterm=none ctermfg=white ctermbg=none
-highlight Directory cterm=bold ctermfg=cyan ctermbg=default
+highlight Directory cterm=bold ctermfg=blue ctermbg=default
 highlight Link cterm=bold ctermfg=yellow ctermbg=default
 highlight BrokenLink cterm=bold ctermfg=red ctermbg=default
 highlight HardLink cterm=none ctermfg=yellow ctermbg=default
