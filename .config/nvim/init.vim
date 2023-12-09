@@ -46,6 +46,7 @@ call plug#begin()
 	Plug 'mhinz/vim-startify'
 	Plug 'junegunn/fzf.vim'
 	Plug 'vifm/vifm.vim'
+	Plug 'ap/vim-css-color'
 call plug#end()
 
 " bubblegum, understated, zenburn, badwolf
