@@ -114,8 +114,10 @@
       <property name="profile-shape" type="int" value="0"/>
       <property name="launcher-icon-size" type="int" value="3"/>
       <property name="menu-width" type="int" value="600"/>
-      <property name="menu-height" type="int" value="660"/>
+      <property name="menu-height" type="int" value="800"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="xfce-backdrop-settings.desktop"/>
         <value type="string" value="Alacritty.desktop"/>
         <value type="string" value="lbreakouthd.desktop"/>
         <value type="string" value="xterm.desktop"/>
@@ -124,8 +126,6 @@
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="pingus.desktop"/>
         <value type="string" value="xfce-mouse-settings.desktop"/>
-        <value type="string" value="xfce4-taskmanager.desktop"/>
-        <value type="string" value="org.gnome.FontViewer.desktop"/>
       </property>
       <property name="view-mode" type="int" value="0"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
