@@ -114,7 +114,7 @@ colors:
     magenta: '#8c738c'
     cyan:    '#6d96a5'
     white:   '#aeb3bb'
-
+      
 # GNOME Terminal Tango Dark
 #colors:
 #  primary:
@@ -144,3 +144,33 @@ colors:
 #    cyan:    '#34e2e2'
 #    white:   '#eeeeec'
 
+## Colors (Wombat)
+#colors:
+#  # Default colors
+#  primary:
+#    #background: '#1f1f1f'
+#    background: '#12151a'
+#    foreground: '#e5e1d8'
+#
+#  # Normal colors
+#  normal:
+#    #black:   '#000000'
+#    black:   '#12151a'
+#    red:     '#f7786d'
+#    green:   '#bde97c'
+#    yellow:  '#efdfac'
+#    blue:    '#6ebaf8'
+#    magenta: '#ef88ff'
+#    cyan:    '#90fdf8'
+#    white:   '#e5e1d8'
+#
+#  # Bright colors
+#  bright:
+#    black:   '#b4b4b4'
+#    red:     '#f99f92'
+#    green:   '#e3f7a1'
+#    yellow:  '#f2e9bf'
+#    blue:    '#b3d2ff'
+#    magenta: '#e5bdff'
+#    cyan:    '#c2fefa'
+#    white:   '#ffffff'
