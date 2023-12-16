@@ -8,8 +8,11 @@
   </property>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="notify-send"/>
       <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="System Config Printer Notification"/>
+      <value type="string" value="Transmission"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
     </property>
   </property>
 </channel>
