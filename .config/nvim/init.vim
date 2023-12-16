@@ -90,6 +90,7 @@ let g:startify_bookmarks = [
   \ { 'n': '~/.config/nvim/init.vim' },
   \ { 'h': '~/.config/hypr/hyprland.conf' },
   \ { 'i': '~/.config/i3/config' },
+  \ { 'g': '~/ezagittokenem' },
   \ { 'x': '~/.xinitrc' },
   \ ]
 
